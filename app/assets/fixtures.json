@@ -1,0 +1,49 @@
+{
+  "data": [
+    {
+      "id": "4v9sik0",
+      "attributes": {
+        "brand": "Volvo",
+        "description": "test desc 0",
+        "image": "https://placehold.it/150x150"
+      },
+      "type": "cars"
+    },
+    {
+      "id": "4v9sik1",
+      "attributes": {
+        "brand": "Ford",
+        "description": "test desc 1",
+        "image": "https://placehold.it/150x150"
+      },
+      "type": "cars"
+    },
+    {
+      "id": "4v9sik2",
+      "attributes": {
+        "brand": "Mitsubishi",
+        "description": "test desc 2",
+        "image": "https://placehold.it/150x150"
+      },
+      "type": "cars"
+    },
+    {
+      "id": "4v9sik3",
+      "attributes": {
+        "brand": "Nissan",
+        "description": "test desc 3",
+        "image": "https://placehold.it/150x150"
+      },
+      "type": "cars"
+    },
+    {
+      "id": "4v9sik4",
+      "attributes": {
+        "brand": "Volvo",
+        "description": "test desc 4",
+        "image": "https://placehold.it/150x150"
+      },
+      "type": "cars"
+    }
+  ]
+}

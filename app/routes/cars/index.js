@@ -1,7 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  beforeModel(){
-    this.transitionTo('cars');
+
+  model: function () {
+    return this.store.findAll('car');
   }
 });

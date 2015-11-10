@@ -1,0 +1,11 @@
+{{yield}}
+<h4>{{label}}</h4>
+<div class="btn-group" role="group" aria-label="{{label}}">
+    {{#each options as |option|}}
+        <button class="btn btn-default {{if (eq selectedOption option) 'active' ''}}"
+                type="button"
+                aria-label="{{option}}" {{action 'select' option}}>
+            {{option}}
+        </button>
+    {{/each}}
+</div>
