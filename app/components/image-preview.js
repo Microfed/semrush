@@ -25,7 +25,7 @@ export default Ember.Component.extend({
   },
 
   loadFullImage: function () {
-    return new Promise((resolve, reject) => {
+    return new Ember.RSVP.Promise((resolve, reject) => {
       if (this.get('_imageHTML')) {
         resolve(this.get('_imageHTML'));
       } else {
@@ -55,7 +55,7 @@ export default Ember.Component.extend({
     var $img = this.$('img');
 
     $img.hover(() => {
-      this.loadFullImage().then(imgHTML => this.showFullImage(imgHTML))
+      this.loadFullImage().then(imgHTML => this.showFullImage(imgHTML));
     }, () => {
       $img.popover('hide');
     });
@@ -64,13 +64,12 @@ export default Ember.Component.extend({
   didRender: function () {
     var $img = this.$('img');
 
-    if (this.get('isThumbnailAvailable')) {
-
+    if (this.get('isThumbnailAvailable') && $img.length) {
       $img.on('error', () => {
-        this.$('img').off('error');
-
         Ember.run(this, function () {
-          this.set('isThumbnailAvailable', false);
+          if (!this.get('isDestroyed')) {
+            this.set('isThumbnailAvailable', false);
+          }
         });
       });
 
