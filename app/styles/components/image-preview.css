@@ -1,0 +1,10 @@
+.small-thumbnail-default-placeholder {
+    background-image: url('/assets/images/placeholder-150x150.png');
+    height: 150px;
+    width: 150px;
+}
+
+.small-thumbnail {
+    height: 150px;
+    width: 150px;
+}
