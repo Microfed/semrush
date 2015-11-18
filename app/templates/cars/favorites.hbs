@@ -1,17 +1,19 @@
-<div class="row">
-    <div class="col-md-6">
-        {{filter-one-dimension options=brands label='Brands' selectedOption=selectedBrand}}
+{{#if hasBrands}}
+    <div class="row">
+        <div class="col-md-6">
+            {{filter-one-dimension options=brands label='Brands' selectedOption=selectedBrand}}
+        </div>
+
+        <div class="col-md-6">
+            {{#if carsNumber}}
+                <h1>Cars picked: {{carsNumber}}</h1>
+            {{else}}
+            {{/if}}
+        </div>
     </div>
 
-    <div class="col-md-6">
-        {{#if carsNumber}}
-            <h1>Cars picked: {{carsNumber}}</h1>
-        {{else}}
-        {{/if}}
-    </div>
-</div>
-
-<hr class="top-divider">
+    <hr class="top-divider">
+{{/if}}
 
 <div class="row">
     <div class="col-md-12">

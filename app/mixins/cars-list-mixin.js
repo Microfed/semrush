@@ -11,11 +11,14 @@ export default Ember.Mixin.create({
 
   selectedBrand: ALL_BRAND,
 
-  brands: computed('model.[]', function () {
-    return this.get('model').mapBy('brand').reduce((brands, brand) => ( brands.addObject(brand) ), [ALL_BRAND]);
+  brands: computed('brandsService.brands', function () {
+    return [ALL_BRAND].concat(this.get('brandsService.brands'));
   }),
 
+  hasBrands: computed.notEmpty('brandsService.brands'),
+
   carsService: Ember.inject.service('cars'),
+  brandsService: Ember.inject.service('brands'),
 
   actions: {
 
