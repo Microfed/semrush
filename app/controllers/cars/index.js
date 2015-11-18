@@ -23,9 +23,9 @@ export default Ember.Controller.extend({
     chooseCar(car) {
       if (car) {
         car.set('isChosen', true);
-        car.save(); // TODO: handle errors and loading time
-
-        this.get('statistics').increasePickedNumberForBrand(car.get('brand'));
+        car.save()
+          .then(() => this.get('statistics').increasePickedNumberForBrand(car.get('brand')))
+          .catch((reason) => car.rollback()); // TODO: show the error to the use
       }
     }
   }
