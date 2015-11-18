@@ -19,8 +19,8 @@ export default Ember.Service.extend({
 
   increasePickedNumberForBrand(brand) {
     let records = this.get('brandPickingRecords');
-    let brandRecord = records.findBy('brand', brand);
-    let currentNumber = brandRecord.pickedNumber;
+    let brandRecord = records.findBy('brand', brand) || {};
+    let currentNumber = brandRecord.pickedNumber || 0;
 
     records.removeObject(brandRecord);
     records.addObject({ brand: brand, pickedNumber: currentNumber + 1});
