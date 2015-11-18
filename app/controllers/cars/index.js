@@ -2,15 +2,19 @@ import Ember from 'ember';
 
 const { computed } = Ember;
 
+const ALL_BRAND = 'All';
+
 export default Ember.Controller.extend({
 
   queryParams: ['brand'],
 
   brand: computed.alias('selectedBrand'),
 
-  selectedBrand: 'All',
+  selectedBrand: ALL_BRAND,
 
-  brands: ['All', 'Volvo', 'Ford', 'Mitsubishi', 'Nissan'],
+  brands: computed('model.[]', function () {
+    return this.get('model').mapBy('brand').reduce((brands, brand) => ( brands.addObject(brand) ), [ALL_BRAND]);
+  }),
 
   statistics: Ember.inject.service('brands-statistics'),
 
