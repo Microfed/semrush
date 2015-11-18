@@ -16,17 +16,13 @@ export default Ember.Controller.extend({
     return this.get('model').mapBy('brand').reduce((brands, brand) => ( brands.addObject(brand) ), [ALL_BRAND]);
   }),
 
-  statistics: Ember.inject.service('brands-statistics'),
+  carsService: Ember.inject.service('cars'),
 
   actions: {
 
     chooseCar(car) {
-      if (car) {
-        car.set('isChosen', true);
-        car.save()
-          .then(() => this.get('statistics').increasePickedNumberForBrand(car.get('brand')))
-          .catch((reason) => car.rollback()); // TODO: show the error to the use
-      }
+      this.get('carsService').toggleChosenForCar(car)
+        .catch((reason) => alert(reason));
     }
   }
 });

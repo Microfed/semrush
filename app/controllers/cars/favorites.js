@@ -16,13 +16,13 @@ export default Ember.Controller.extend({
 
   carsNumber: computed.reads('cars.length'),
 
+  carsService: Ember.inject.service('cars'),
+
   actions: {
 
     removeCar(car) {
-      if (car) {
-        car.set('isChosen', false);
-        car.save(); // TODO: handle errors and loading time
-      }
+      this.get('carsService').toggleChosenForCar(car)
+        .catch((reason) => alert(reason));
     }
   }
 });
