@@ -10,6 +10,16 @@ export default Ember.Controller.extend({
 
   selectedBrand: 'All',
 
-  brands: ['All', 'Volvo', 'Ford', 'Mitsubishi', 'Nissan']
+  brands: ['All', 'Volvo', 'Ford', 'Mitsubishi', 'Nissan'],
+
+  actions: {
+
+    chooseCar(car) {
+      if (car) {
+        car.set('isChosen', true);
+        car.save(); // TODO: handle errors and loading time
+      }
+    }
+  }
 });
 

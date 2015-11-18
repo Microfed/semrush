@@ -23,7 +23,11 @@
                 </div>
 
                 <div class="col-md-2">
-                    <button class="btn btn-success">Choose this car</button>
+                    {{#if car.isChosen}}
+                        It's one of your favorite car, Carl!
+                    {{else}}
+                        <button class="btn btn-success" {{action 'chooseCar' car}}>Choose this car</button>
+                    {{/if}}
                 </div>
             </div>
         {{/each}}
