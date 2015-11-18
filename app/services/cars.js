@@ -4,7 +4,7 @@ export default Ember.Service.extend({
 
   statistics: Ember.inject.service('brands-statistics'),
 
-  toggleChosenForCar: function (car) {
+  toggleSelectedForCar: function (car) {
     return new Ember.RSVP.Promise((resolve, reject) => {
       if (car) {
         car.toggleProperty('isChosen');
@@ -20,10 +20,10 @@ export default Ember.Service.extend({
           .catch((reason) => {
             car.toggleProperty('isChosen'); //TODO: use rollback() for JSONAdapter
 
-            reject(new Error('semrush/services/cars::toggleChosenForCar couldn\'t save state for the car', car));
+            reject(new Error('semrush/services/cars::toggleSelectedForCar couldn\'t save state for the car', car));
           });
       } else {
-        throw new Error('semrush/services/cars::toggleChosenForCar car is empty');
+        throw new Error('semrush/services/cars::toggleSelectedForCar car is empty');
       }
     });
   }
