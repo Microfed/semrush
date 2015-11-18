@@ -1,0 +1,6 @@
+{{yield}}
+{{#if isThumbnailAvailable}}
+    <img src="{{thumbURI}}" alt="" class="small-thumbnail">
+{{else}}
+    <div class="small-thumbnail-default-placeholder"></div>
+{{/if}}

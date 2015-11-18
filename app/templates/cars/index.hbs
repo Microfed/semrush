@@ -4,12 +4,14 @@
     </div>
 </div>
 
+<hr class="top-divider">
+
 <div class="row">
     <div class="col-md-12">
         {{#each model as |car|}}
             <div class="row top15 cars-list-row">
                 <div class="col-md-4">
-                    <img src="{{car.image}}" alt="" class="src">
+                    {{image-preview imageURI=car.image}}
                 </div>
 
                 <div class="col-md-1">

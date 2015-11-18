@@ -1,3 +1,11 @@
 .cars-list-row {
     min-height: 150px;
+    border: #EEEEEE 1px solid;
+    border-radius: 5px;
+    border-bottom-style: outset;
+    padding: 12px 0 12px 0;
+}
+
+.top-divider {
+    margin-bottom: 0;
 }
