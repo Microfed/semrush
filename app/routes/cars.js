@@ -3,6 +3,6 @@ import fixtures from 'semrush/assets/fixtures';
 
 export default Ember.Route.extend({
   beforeModel(){
-    this.store.importData(fixtures, { json: false });
+    //this.store.importData(fixtures, { json: false });
   }
 });

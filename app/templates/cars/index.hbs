@@ -9,27 +9,13 @@
 <div class="row">
     <div class="col-md-12">
         {{#each model as |car|}}
-            <div class="row top15 cars-list-row">
-                <div class="col-md-4">
-                    {{image-preview imageURI=car.image}}
-                </div>
-
-                <div class="col-md-1">
-                    {{car.brand}}
-                </div>
-
-                <div class="col-md-5">
-                    {{car.description}}
-                </div>
-
-                <div class="col-md-2">
-                    {{#if car.isChosen}}
-                        It's one of your favorite car, Carl!
-                    {{else}}
-                        <button class="btn btn-success" {{action 'chooseCar' car}}>Choose this car</button>
-                    {{/if}}
-                </div>
-            </div>
+            {{#car-list-item car=car}}
+                {{#if car.isChosen}}
+                    It's one of your favorite car, Carl!
+                {{else}}
+                    <button class="btn btn-success" {{action 'chooseCar' car}}>Choose this car</button>
+                {{/if}}
+            {{/car-list-item}}
         {{/each}}
     </div>
 </div>
