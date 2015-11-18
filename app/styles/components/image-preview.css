@@ -8,3 +8,9 @@
     height: 150px;
     width: 150px;
 }
+
+.image-preview-full-image {
+    /* TODO: get these values from configuration file*/
+    max-width: 1200px;
+    max-height: 1200px;
+}

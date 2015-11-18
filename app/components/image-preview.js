@@ -46,6 +46,7 @@ export default Ember.Component.extend({
           reject();
         };
 
+        imageEl.className = 'image-preview-full-image';
         imageEl.src = this.get('imageURI');
       }
     });
