@@ -6,7 +6,11 @@
 
 <div class="row">
     <div class="col-md-12">
-        {{car-picking-statistics data=model}}
+        {{#if model.length}}
+            {{car-picking-statistics data=model}}
+        {{else}}
+            <h3>There is not actual statistics for now. Come back later!</h3>
+        {{/if}}
     </div>
 </div>
 
