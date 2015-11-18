@@ -8,12 +8,7 @@ export default Ember.Service.extend({
   getStatistics(){
     return new Ember.RSVP.Promise((resolve, reject) => {
       let records = this.get('brandPickingRecords');
-
-      if (records.get('length') > 0) {
-        resolve(records.get('content'));
-      } else {
-        reject('Statistics is not available right now.');
-      }
+      resolve(records.get('content'));
     });
   },
 
@@ -23,6 +18,6 @@ export default Ember.Service.extend({
     let currentNumber = brandRecord.pickedNumber || 0;
 
     records.removeObject(brandRecord);
-    records.addObject({ brand: brand, pickedNumber: currentNumber + 1});
+    records.addObject({ brand: brand, pickedNumber: currentNumber + 1 });
   }
 });
