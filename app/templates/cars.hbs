@@ -2,9 +2,17 @@
     <div class="col-md-6">
         <nav>
             <ul class="nav nav-tabs">
-                {{#nav-link-to 'cars.index' tagName='li'}}Cars{{/nav-link-to}}
-                {{#nav-link-to 'cars.favorites' tagName='li'}}Your cars{{/nav-link-to}}
-                {{#nav-link-to 'cars.statistics' tagName='li'}}Statistics{{/nav-link-to}}
+                {{#nav-link-to 'cars.index' tagName='li'}}
+                    {{t 'cars.nav-menu-links.cars-index'}}
+                {{/nav-link-to}}
+
+                {{#nav-link-to 'cars.favorites' tagName='li'}}
+                    {{t 'cars.nav-menu-links.cars-favorites'}}
+                {{/nav-link-to}}
+
+                {{#nav-link-to 'cars.statistics' tagName='li'}}
+                    {{t 'cars.nav-menu-links.cars-statistics'}}
+                {{/nav-link-to}}
             </ul>
         </nav>
     </div>

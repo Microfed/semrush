@@ -1,7 +1,7 @@
 {{#if hasBrands}}
     <div class="row">
         <div class="col-md-6">
-            {{filter-one-dimension options=brands label='Brands' selectedOption=selectedBrand}}
+            {{filter-one-dimension options=brands label=(t 'cars.index.filter-label') selectedOption=selectedBrand}}
         </div>
     </div>
 
@@ -14,14 +14,16 @@
             {{#car-list-item car=car}}
                 {{#if car.isChosen}}
                     <div class="text-success">
-                        <h4>It's one of your favorite car, Carl!</h4>
+                        <h4>{{t 'car-list-item.car-selected-message'}}</h4>
                     </div>
                 {{else}}
-                    <button class="btn btn-success" {{action 'toggleSelectedForCar' car}}>Choose this car</button>
+                    <button class="btn btn-success" {{action 'toggleSelectedForCar' car}}>
+                        {{t 'car-list-item.choose-car-button-label'}}
+                    </button>
                 {{/if}}
             {{/car-list-item}}
         {{else}}
-            <h3>There will be tons of metal here soon!</h3>
+            <h3>{{t 'cars.index.empty-cars-list'}}</h3>
         {{/each}}
     </div>
 </div>

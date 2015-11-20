@@ -2,23 +2,31 @@ import Ember from 'ember';
 
 const { computed } = Ember;
 
-const ALL_BRAND = 'All';
-
 export default Ember.Mixin.create({
+
   queryParams: ['brand'],
+
+  carsService: Ember.inject.service('cars'),
+  brandsService: Ember.inject.service('brands'),
+  i18n: Ember.inject.service('i18n'),
+
+  allBrandLabel: computed('i18n', function () {
+    return this.get('i18n').t('cars.index.filter-all-label').toString();
+  }),
 
   brand: computed.alias('selectedBrand'),
 
-  selectedBrand: ALL_BRAND,
+  selectedBrand: 'All',
 
-  brands: computed('brandsService.brands', function () {
-    return [ALL_BRAND].concat(this.get('brandsService.brands'));
+  brands: computed(['brandsService.brands', 'allBrandLabel'], function () {
+    return [this.get('allBrandLabel')].concat(this.get('brandsService.brands'));
   }),
 
   hasBrands: computed.notEmpty('brandsService.brands'),
 
-  carsService: Ember.inject.service('cars'),
-  brandsService: Ember.inject.service('brands'),
+  selectAllBrand: function () {
+    this.set('selectedBrand', this.get('allBrandLabel'));
+  }.on('init'),
 
   actions: {
 
