@@ -19,7 +19,7 @@
     <div class="col-md-12">
         {{#each cars as |car|}}
             {{#car-list-item car=car}}
-                <button class="btn btn-success" {{action 'removeCar' car}}>Remove this car</button>
+                <button class="btn btn-success" {{action 'toggleSelectedForCar' car}}>Remove this car</button>
             {{/car-list-item}}
         {{else}}
             <h3>Here will be all your cars. Choose one from our {{link-to 'marketplace' 'cars.index'}}!</h3>
