@@ -1,17 +1,25 @@
-<div class="row top15 cars-list-row">
-    <div class="col-md-4">
-        {{image-preview imageURI=car.image}}
-    </div>
+<div class="row cars-list-row">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="col-md-2">
+                {{image-preview imageURI=car.image}}
+            </div>
 
-    <div class="col-md-1">
-        {{car.brand}}
-    </div>
+            <div class="col-md-1">
+                <div class="car-list-item-brand">
+                    <b>{{car.brand}}</b>
+                </div>
+            </div>
 
-    <div class="col-md-5">
-        {{car.description}}
-    </div>
+            <div class="col-md-7 car-list-item-description-column">
+                <div class="car-list-item-description">
+                    {{car.description}}
+                </div>
+            </div>
 
-    <div class="col-md-2">
-        {{yield}}
+            <div class="col-md-2">
+                {{yield}}
+            </div>
+        </div>
     </div>
 </div>
