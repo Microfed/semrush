@@ -4,7 +4,7 @@
       "id": "4v9sik0",
       "attributes": {
         "brand": "Volvo",
-        "description": "test desc 0 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet maximus est, a hendrerit tellus maximus et. Phasellus consectetur faucibus interdum. Nam ex turpis, malesuada eu faucibus ut, semper a libero. Aenean sit amet risus id lectus ultrices egestas ac sit amet magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus sit amet imperdiet nisl. In molestie odio volutpat aliquet tincidunt. Cras venenatis elit pretium tortor aliquam, vitae sollicitudin massa auctor. Cras aliquet tincidunt vestibulum. Nunc non venenatis augue, fermentum viverra purus. In ut mauris nec lectus fringilla lobortis ut eget libero. Vestibulum scelerisque.",
+        "description": "test desc 0 ",
         "image": "https://placehold.it/150x150"
       },
       "type": "cars"
@@ -22,7 +22,7 @@
       "id": "4v9sik2",
       "attributes": {
         "brand": "Mitsubishi",
-        "description": "test desc 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet maximus est, a hendrerit tellus maximus et. Phasellus consectetur faucibus interdum. Nam ex turpis, malesuada eu faucibus ut, semper a libero. Aenean sit amet risus id lectus ultrices egestas ac sit amet magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus sit amet imperdiet nisl. In molestie odio volutpat aliquet tincidunt. Cras venenatis elit pretium tortor aliquam, vitae sollicitudin massa auctor. Cras aliquet tincidunt vestibulum. Nunc non venenatis augue, fermentum viverra purus. In ut mauris nec lectus fringilla lobortis ut eget libero. Vestibulum scelerisque.",
+        "description": "test desc 2 ",
         "image": "https://placehold.it/350x350"
       },
       "type": "cars"
