@@ -9,7 +9,7 @@ export default Ember.Route.extend({
 
   model: function (params) {
     // if we looking for all brands
-    if (params.brand === 'All') {
+    if (params.brand === 'all') {
       // then remove this param from query to match all 'brand' values
       delete params.brand;
     }
