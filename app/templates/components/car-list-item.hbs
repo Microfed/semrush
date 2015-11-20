@@ -1,0 +1,25 @@
+<div class="row cars-list-row">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="col-md-2">
+                {{image-preview imageURI=car.image}}
+            </div>
+
+            <div class="col-md-1">
+                <div class="car-list-item-brand">
+                    <b>{{capitalize-string car.brand}}</b>
+                </div>
+            </div>
+
+            <div class="col-md-7 car-list-item-description-column">
+                <div class="car-list-item-description">
+                    {{car.description}}
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                {{yield}}
+            </div>
+        </div>
+    </div>
+</div>

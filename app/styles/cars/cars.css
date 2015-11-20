@@ -1,0 +1,21 @@
+.cars-list-row {
+    min-height: 150px;
+}
+
+.car-list-item-brand {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.car-list-item-description {
+    margin-bottom: 5px;
+}
+
+/*show dividing line after description column, if there is a place to put another column to the right*/
+@media (min-width: 992px) {
+    .car-list-item-description-column {
+        min-height: 150px;
+        padding-right: 5px;
+        box-shadow: 1px 0 0 rgba(0, 0, 0, .05);
+    }
+}

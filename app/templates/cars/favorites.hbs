@@ -1,0 +1,34 @@
+{{#if hasBrands}}
+    <div class="row">
+        <div class="col-md-6">
+            {{filter-one-dimension options=brands label='Brands' selectedOption=selectedBrand}}
+        </div>
+
+        <div class="col-md-6">
+            {{#if carsNumber}}
+                <h1>{{t 'cars.favorites.cars-picked' count=carsNumber brand=selectedBrand}}</h1>
+            {{/if}}
+        </div>
+    </div>
+
+    <hr class="top-divider">
+{{/if}}
+
+<div class="row">
+    <div class="col-md-12">
+        {{#each cars as |car|}}
+            {{#car-list-item car=car}}
+                <button class="btn btn-success" {{action 'toggleSelectedForCar' car}}>
+                    {{t 'car-list-item.remove-car-button-label'}}
+                </button>
+            {{/car-list-item}}
+        {{else}}
+            <h3>
+                {{t 'cars.favorites.empty-cars-list.message'}}
+                {{link-to (t 'cars.favorites.empty-cars-list.marketplace-link') 'cars.index'}}
+            </h3>
+        {{/each}}
+    </div>
+</div>
+
+{{outlet}}
