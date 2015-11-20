@@ -44,7 +44,8 @@ module.exports = function (environment) {
   }
 
   if (environment === 'production') {
-
+    // for gh-pages, accordingly to https://github.com/poetic/ember-cli-github-pages/issues/1
+    ENV.baseURL = '/semrush';
   }
 
   return ENV;
