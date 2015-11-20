@@ -3,7 +3,7 @@
     {
       "id": "4v9sik0",
       "attributes": {
-        "brand": "Volvo",
+        "brand": "volvo",
         "description": "test desc 0 ",
         "image": "https://placehold.it/150x150"
       },
@@ -12,7 +12,7 @@
     {
       "id": "4v9sik1",
       "attributes": {
-        "brand": "Ford",
+        "brand": "ford",
         "description": "test desc 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet maximus est, a hendrerit tellus maximus et. Phasellus consectetur faucibus interdum. Nam ex turpis, malesuada eu faucibus ut, semper a libero. Aenean sit amet risus id lectus ultrices egestas ac sit amet magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus sit amet imperdiet nisl. In molestie odio volutpat aliquet tincidunt. Cras venenatis elit pretium tortor aliquam, vitae sollicitudin massa auctor. Cras aliquet tincidunt vestibulum. Nunc non venenatis augue, fermentum viverra purus. In ut mauris nec lectus fringilla lobortis ut eget libero. Vestibulum scelerisque.",
         "image": "https://placehold.it/250x250"
       },
@@ -21,7 +21,7 @@
     {
       "id": "4v9sik2",
       "attributes": {
-        "brand": "Mitsubishi",
+        "brand": "mitsubishi",
         "description": "test desc 2 ",
         "image": "https://placehold.it/350x350"
       },
@@ -30,18 +30,161 @@
     {
       "id": "4v9sik3",
       "attributes": {
-        "brand": "Nissan",
+        "brand": "nissan",
         "description": "test desc 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet maximus est, a hendrerit tellus maximus et. Phasellus consectetur faucibus interdum. Nam ex turpis, malesuada eu faucibus ut, semper a libero. Aenean sit amet risus id lectus ultrices egestas ac sit amet magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus sit amet imperdiet nisl. In molestie odio volutpat aliquet tincidunt. Cras venenatis elit pretium tortor aliquam, vitae sollicitudin massa auctor. Cras aliquet tincidunt vestibulum. Nunc non venenatis augue, fermentum viverra purus. In ut mauris nec lectus fringilla lobortis ut eget libero. Vestibulum scelerisque.",
         "image": "https://placehold.it/450x450"
       },
       "type": "cars"
     },
+
+
     {
       "id": "4v9sik4",
       "attributes": {
-        "brand": "Volvo",
-        "description": "test desc 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet maximus est, a hendrerit tellus maximus et. Phasellus consectetur faucibus interdum. Nam ex turpis, malesuada eu faucibus ut, semper a libero. Aenean sit amet risus id lectus ultrices egestas ac sit amet magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus sit amet imperdiet nisl. In molestie odio volutpat aliquet tincidunt. Cras venenatis elit pretium tortor aliquam, vitae sollicitudin massa auctor. Cras aliquet tincidunt vestibulum. Nunc non venenatis augue, fermentum viverra purus. In ut mauris nec lectus fringilla lobortis ut eget libero. Vestibulum scelerisque.",
-        "image": "https://placehold.it/550x550"
+        "brand": "volvo",
+        "description": "test desc 0 ",
+        "image": "https://placehold.it/150x150"
+      },
+      "type": "cars"
+    },
+    {
+      "id": "4v9sik5",
+      "attributes": {
+        "brand": "ford",
+        "description": "test desc 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet maximus est, a hendrerit tellus maximus et. Phasellus consectetur faucibus interdum. Nam ex turpis, malesuada eu faucibus ut, semper a libero. Aenean sit amet risus id lectus ultrices egestas ac sit amet magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus sit amet imperdiet nisl. In molestie odio volutpat aliquet tincidunt. Cras venenatis elit pretium tortor aliquam, vitae sollicitudin massa auctor. Cras aliquet tincidunt vestibulum. Nunc non venenatis augue, fermentum viverra purus. In ut mauris nec lectus fringilla lobortis ut eget libero. Vestibulum scelerisque.",
+        "image": "https://placehold.it/250x250"
+      },
+      "type": "cars"
+    },
+    {
+      "id": "4v9sik6",
+      "attributes": {
+        "brand": "mitsubishi",
+        "description": "test desc 2 ",
+        "image": "https://placehold.it/350x350"
+      },
+      "type": "cars"
+    },
+    {
+      "id": "4v9sik7",
+      "attributes": {
+        "brand": "nissan",
+        "description": "test desc 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet maximus est, a hendrerit tellus maximus et. Phasellus consectetur faucibus interdum. Nam ex turpis, malesuada eu faucibus ut, semper a libero. Aenean sit amet risus id lectus ultrices egestas ac sit amet magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus sit amet imperdiet nisl. In molestie odio volutpat aliquet tincidunt. Cras venenatis elit pretium tortor aliquam, vitae sollicitudin massa auctor. Cras aliquet tincidunt vestibulum. Nunc non venenatis augue, fermentum viverra purus. In ut mauris nec lectus fringilla lobortis ut eget libero. Vestibulum scelerisque.",
+        "image": "https://placehold.it/450x450"
+      },
+      "type": "cars"
+    },
+
+
+    {
+      "id": "4v9sik8",
+      "attributes": {
+        "brand": "volvo",
+        "description": "test desc 0 ",
+        "image": "https://placehold.it/150x150"
+      },
+      "type": "cars"
+    },
+    {
+      "id": "4v9sik9",
+      "attributes": {
+        "brand": "ford",
+        "description": "test desc 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet maximus est, a hendrerit tellus maximus et. Phasellus consectetur faucibus interdum. Nam ex turpis, malesuada eu faucibus ut, semper a libero. Aenean sit amet risus id lectus ultrices egestas ac sit amet magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus sit amet imperdiet nisl. In molestie odio volutpat aliquet tincidunt. Cras venenatis elit pretium tortor aliquam, vitae sollicitudin massa auctor. Cras aliquet tincidunt vestibulum. Nunc non venenatis augue, fermentum viverra purus. In ut mauris nec lectus fringilla lobortis ut eget libero. Vestibulum scelerisque.",
+        "image": "https://placehold.it/250x250"
+      },
+      "type": "cars"
+    },
+    {
+      "id": "4v9sik10",
+      "attributes": {
+        "brand": "mitsubishi",
+        "description": "test desc 2 ",
+        "image": "https://placehold.it/350x350"
+      },
+      "type": "cars"
+    },
+    {
+      "id": "4v9sik11",
+      "attributes": {
+        "brand": "nissan",
+        "description": "test desc 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet maximus est, a hendrerit tellus maximus et. Phasellus consectetur faucibus interdum. Nam ex turpis, malesuada eu faucibus ut, semper a libero. Aenean sit amet risus id lectus ultrices egestas ac sit amet magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus sit amet imperdiet nisl. In molestie odio volutpat aliquet tincidunt. Cras venenatis elit pretium tortor aliquam, vitae sollicitudin massa auctor. Cras aliquet tincidunt vestibulum. Nunc non venenatis augue, fermentum viverra purus. In ut mauris nec lectus fringilla lobortis ut eget libero. Vestibulum scelerisque.",
+        "image": "https://placehold.it/450x450"
+      },
+      "type": "cars"
+    },
+
+
+    {
+      "id": "4v9sik12",
+      "attributes": {
+        "brand": "volvo",
+        "description": "test desc 0 ",
+        "image": "https://placehold.it/150x150"
+      },
+      "type": "cars"
+    },
+    {
+      "id": "4v9sik13",
+      "attributes": {
+        "brand": "ford",
+        "description": "test desc 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet maximus est, a hendrerit tellus maximus et. Phasellus consectetur faucibus interdum. Nam ex turpis, malesuada eu faucibus ut, semper a libero. Aenean sit amet risus id lectus ultrices egestas ac sit amet magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus sit amet imperdiet nisl. In molestie odio volutpat aliquet tincidunt. Cras venenatis elit pretium tortor aliquam, vitae sollicitudin massa auctor. Cras aliquet tincidunt vestibulum. Nunc non venenatis augue, fermentum viverra purus. In ut mauris nec lectus fringilla lobortis ut eget libero. Vestibulum scelerisque.",
+        "image": "https://placehold.it/250x250"
+      },
+      "type": "cars"
+    },
+    {
+      "id": "4v9sik14",
+      "attributes": {
+        "brand": "mitsubishi",
+        "description": "test desc 2 ",
+        "image": "https://placehold.it/350x350"
+      },
+      "type": "cars"
+    },
+    {
+      "id": "4v9sik15",
+      "attributes": {
+        "brand": "nissan",
+        "description": "test desc 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet maximus est, a hendrerit tellus maximus et. Phasellus consectetur faucibus interdum. Nam ex turpis, malesuada eu faucibus ut, semper a libero. Aenean sit amet risus id lectus ultrices egestas ac sit amet magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus sit amet imperdiet nisl. In molestie odio volutpat aliquet tincidunt. Cras venenatis elit pretium tortor aliquam, vitae sollicitudin massa auctor. Cras aliquet tincidunt vestibulum. Nunc non venenatis augue, fermentum viverra purus. In ut mauris nec lectus fringilla lobortis ut eget libero. Vestibulum scelerisque.",
+        "image": "https://placehold.it/450x450"
+      },
+      "type": "cars"
+    },
+
+
+    {
+      "id": "4v9sik16",
+      "attributes": {
+        "brand": "volvo",
+        "description": "test desc 0 ",
+        "image": "https://placehold.it/150x150"
+      },
+      "type": "cars"
+    },
+    {
+      "id": "4v9sik17",
+      "attributes": {
+        "brand": "ford",
+        "description": "test desc 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet maximus est, a hendrerit tellus maximus et. Phasellus consectetur faucibus interdum. Nam ex turpis, malesuada eu faucibus ut, semper a libero. Aenean sit amet risus id lectus ultrices egestas ac sit amet magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus sit amet imperdiet nisl. In molestie odio volutpat aliquet tincidunt. Cras venenatis elit pretium tortor aliquam, vitae sollicitudin massa auctor. Cras aliquet tincidunt vestibulum. Nunc non venenatis augue, fermentum viverra purus. In ut mauris nec lectus fringilla lobortis ut eget libero. Vestibulum scelerisque.",
+        "image": "https://placehold.it/250x250"
+      },
+      "type": "cars"
+    },
+    {
+      "id": "4v9sik18",
+      "attributes": {
+        "brand": "mitsubishi",
+        "description": "test desc 2 ",
+        "image": "https://placehold.it/350x350"
+      },
+      "type": "cars"
+    },
+    {
+      "id": "4v9sik19",
+      "attributes": {
+        "brand": "nissan",
+        "description": "test desc 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquet maximus est, a hendrerit tellus maximus et. Phasellus consectetur faucibus interdum. Nam ex turpis, malesuada eu faucibus ut, semper a libero. Aenean sit amet risus id lectus ultrices egestas ac sit amet magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus sit amet imperdiet nisl. In molestie odio volutpat aliquet tincidunt. Cras venenatis elit pretium tortor aliquam, vitae sollicitudin massa auctor. Cras aliquet tincidunt vestibulum. Nunc non venenatis augue, fermentum viverra purus. In ut mauris nec lectus fringilla lobortis ut eget libero. Vestibulum scelerisque.",
+        "image": "https://placehold.it/450x450"
       },
       "type": "cars"
     }
