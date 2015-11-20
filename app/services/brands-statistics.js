@@ -6,7 +6,7 @@ export default Ember.Service.extend({
   brandPickingRecords: BrandPickingRecords.create(),
 
   getStatistics(){
-    return new Ember.RSVP.Promise((resolve, reject) => {
+    return new Ember.RSVP.Promise((resolve) => {
       let records = this.get('brandPickingRecords');
       resolve(records.get('content'));
     });
