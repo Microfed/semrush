@@ -16,17 +16,13 @@ export default Ember.Mixin.create({
 
   brand: computed.alias('selectedBrand'),
 
-  selectedBrand: 'All',
+  selectedBrand: 'all',
 
   brands: computed(['brandsService.brands', 'allBrandLabel'], function () {
     return [this.get('allBrandLabel')].concat(this.get('brandsService.brands'));
   }),
 
   hasBrands: computed.notEmpty('brandsService.brands'),
-
-  selectAllBrand: function () {
-    this.set('selectedBrand', this.get('allBrandLabel'));
-  }.on('init'),
 
   actions: {
 

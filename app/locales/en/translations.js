@@ -23,7 +23,7 @@ export default {
 
     'index': {
       'filter-label': 'Brands',
-      'filter-all-label': 'All',
+      'filter-all-label': 'all',
       'empty-cars-list': 'There will be tons of metal here soon!'
     },
 
