@@ -29,8 +29,8 @@ export default {
 
     'favorites': {
       'cars-picked': {
-        'one': 'One car picked ({{brand}})',
-        'other': '{{count}} cars picked ({{brand}})'
+        'one': 'One {{brand}} car picked',
+        'other': '{{count}} {{brand}} cars picked'
       },
       'empty-cars-list': {
         'message': 'Here will be all your cars. Choose one from our ',
