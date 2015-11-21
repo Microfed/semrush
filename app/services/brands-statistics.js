@@ -1,12 +1,14 @@
 import Ember from 'ember';
 import BrandPickingRecords from 'semrush/models/brand-picking-records';
 
+let { Promise } = Ember.RSVP;
+
 export default Ember.Service.extend({
 
   brandPickingRecords: BrandPickingRecords.create(),
 
   getStatistics(){
-    return new Ember.RSVP.Promise((resolve) => {
+    return new Promise((resolve) => {
       let records = this.get('brandPickingRecords');
       resolve(records.get('content'));
     });

@@ -1,11 +1,13 @@
 import Ember from 'ember';
 
+let { Promise } = Ember.RSVP;
+
 export default Ember.Service.extend({
 
   statistics: Ember.inject.service('brands-statistics'),
 
   toggleSelectedForCar: function (car) {
-    return new Ember.RSVP.Promise((resolve, reject) => {
+    return new Promise((resolve, reject) => {
       if (car) {
         car.toggleProperty('isChosen');
 

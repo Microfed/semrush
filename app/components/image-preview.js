@@ -1,5 +1,7 @@
 import Ember from 'ember';
 
+let { Promise } = Ember.RSVP;
+
 export default Ember.Component.extend({
 
   imageURI: '',
@@ -25,7 +27,7 @@ export default Ember.Component.extend({
   },
 
   loadFullImage: function () {
-    return new Ember.RSVP.Promise((resolve, reject) => {
+    return new Promise((resolve, reject) => {
       if (this.get('_imageHTML')) {
         resolve(this.get('_imageHTML'));
       } else {
