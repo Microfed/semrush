@@ -9,7 +9,7 @@ export default Ember.Controller.extend(CarsListMixin, {
   cars: computed.filterBy('model', 'isChosen'),
   carsNumber: computed.reads('cars.length'),
 
-  carsPickedLabel: computed('i18n', 'selectedBrand', function () {
+  carsPickedLabel: computed('i18n', 'selectedBrand', 'carsNumber', function () {
     var selectedBrand = this.get('selectedBrand') || '';
 
     if (selectedBrand === this.get('allBrandLabel')) {
