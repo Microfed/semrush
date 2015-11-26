@@ -14,7 +14,7 @@ export default Ember.Component.extend({
 
   _imageHTML: null,
 
-  showFullImage: function (imageHTML) {
+  showFullImage(imageHTML) {
     var $img = this.$('img');
 
     if ($img.length && imageHTML) {
@@ -24,7 +24,7 @@ export default Ember.Component.extend({
     }
   },
 
-  loadFullImage: function () {
+  loadFullImage() {
     return new Ember.RSVP.Promise((resolve, reject) => {
       if (this.get('_imageHTML')) {
         resolve(this.get('_imageHTML'));
@@ -33,6 +33,7 @@ export default Ember.Component.extend({
 
         imageEl.onload = () => {
           imageEl.onload = null;
+          imageEl.onerror = null;
 
           let imageHTML = imageEl.outerHTML;
           this.set('_imageHTML', imageHTML);
@@ -42,6 +43,7 @@ export default Ember.Component.extend({
 
         imageEl.onerror = () => {
           imageEl.onerror = null;
+          imageEl.onload = null;
 
           reject();
         };
@@ -52,7 +54,7 @@ export default Ember.Component.extend({
     });
   },
 
-  setupPopover: function () {
+  setupPopover() {
     var $img = this.$('img');
 
     $img.hover(() => {
@@ -62,7 +64,7 @@ export default Ember.Component.extend({
     });
   },
 
-  didRender: function () {
+  didRender() {
     var $img = this.$('img');
 
     if (this.get('isThumbnailAvailable') && $img.length) {
@@ -76,5 +78,14 @@ export default Ember.Component.extend({
 
       this.setupPopover();
     }
+  },
+
+  willDestroyElement() {
+    let $img = this.$('img');
+
+    $img.popover('disable');
+    this.$('.popover').remove();
+
+    $img.unbind();
   }
 });
